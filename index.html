@@ -1,0 +1,179 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Live Sushi SF - GA Final Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav>
+    <div class="container row">
+      <a id="logo" href="#"><img src="images/logo.png" height="16">LIVE SUSHI</a>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="hero"></div>
+  <div class="container">
+    <section id="myReservations">
+      <h2>My Reservations</h2>
+      <table>
+        <thead>
+          <td>Name</td>
+          <td>Day</td>
+          <td>Time</td>
+          <td>Party Size</td>
+          <td></td>
+        </thead>
+        <tbody class="reservations-list">
+        </tbody>
+      </table>
+    </section>
+    <section class="row" id="about">
+      <div class="about-us">
+        <h2>Welcome to Live Sushi</h2>
+        <p>Fast, fresh and impeccably presented sushi and Japanese cuisine — that’s what San Franciscans know to expect from the team at Live Sushi. We also offer unparalleled sushi catering for events and venues of any size throughout the San Francisco Bay Area.</p>
+        <p class="testimonial">"While sushi is at the heart of the menu — and it’s very good with such fish as wild hamachi and albacore toro — there’s much more to draw people in." – Michael Bauer, San Francisco Chronicle</p>
+        <a class="btn btn-primary show-modal" href="#reservations">Make a Reservation</a>
+        <a class="btn btn-default" href="#onlineOrder">Order Online</a>
+      </div>
+      <div class="hours">
+        <h2>Hours</h2>
+        <ul>
+          <li><span>Mon</span><span>11:00am - 2:30pm<br>5:00pm - 10:30pm</span></li>
+          <li><span>Tue</span><span>11:00am - 2:30pm<br>5:00pm - 10:30pm</span></li>
+          <li><span>Wed</span><span>11:00am - 2:30pm<br>5:00pm - 10:30pm</span></li>
+          <li><span>Thu</span><span>11:00am - 2:30pm<br>5:00pm - 10:30pm</span></li>
+          <li><span>Fri</span><span>11:00am - 2:30pm<br>5:00pm - 10:30pm</span></li>
+          <li><span>Sat</span><span>11:00am - 2:30pm<br>5:00pm - 10:30pm</span></li>
+          <li><span>Sun</span><span>11:00am - 2:30pm<br>5:00pm - 10:30pm</span></li>
+        </ul>
+      </div>
+    </section>
+    <section id="menu">
+      <div class="row menus">
+        <div class="menu-type">
+          <a href="#"><img src="images/lunch.jpg"></a>
+          <h3>Lunch</h3>
+          <p>Donec pellentesque interdum dolor sed consectetur.</p>
+        </div>
+        <div class="menu-type">
+          <a href="#"><img src="images/dinner.jpg"></a>
+          <h3>Dinner</h3>
+          <p>Donec pellentesque interdum dolor sed consectetur.</p>
+        </div>
+        <div class="menu-type">
+          <a href="#"><img src="images/togo.jpg"></a>
+          <h3>Take Out</h3>
+          <p>Donec pellentesque interdum dolor sed consectetur.</p>
+        </div>
+        <div class="menu-type">
+          <a href="#"><img src="images/catering.jpg"></a>
+          <h3>Cateing</h3>
+          <p>Donec pellentesque interdum dolor sed consectetur.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="row location">
+        <div class="basic-contact">
+          <h2>Come Visit Us</h2>
+          <p>For catering and general inquiries: <a href="mailto:info@livesushibar.com">info@livesushibar.com</a></p>
+          <p><a href="#">2001 17th Street (at Kansas)<br>San Francisco, CA 94103</a></p>
+          <p>Phone: 415-861-8610</p>
+        </div>
+        <div class="map-container">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; Copyright 2018 Live Sushi Bar. All Rights Reserved.</p>
+  </footer>
+  <div class="modal hidden" id="reservations">
+    <div class="modal-header">
+      <h2>New Reservation</h2>
+    </div>
+    <div class="modal-body">
+      <form id="reservationForm">
+        <div class="form-group">
+          <input type="text" class="form-input reservation-name" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button">Choose a day <i class="fa fa-caret-down"></i></button>
+            <ul class="dropdown-menu reservation-day">
+              <li><a>Monday</a></li>
+              <li><a>Tuesday</a></li>
+              <li><a>Wednesday</a></li>
+              <li><a>Thursday</a></li>
+              <li><a>Friday</a></li>
+              <li><a>Saturday</a></li>
+              <li><a>Sunday</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button">Choose a time <i class="fa fa-caret-down"></i></button>
+            <ul class="dropdown-menu reservation-time">
+              <li><a>11am</a></li>
+              <li><a>12pm</a></li>
+              <li><a>1pm</a></li>
+              <li><a>2pm</a></li>
+              <li><a>3pm</a></li>
+              <li><a>4pm</a></li>
+              <li><a>5pm</a></li>
+              <li><a>6pm</a></li>
+              <li><a>7pm</a></li>
+              <li><a>8pm</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button">Choose party size <i class="fa fa-caret-down"></i></button>
+            <ul class="dropdown-menu reservation-party">
+              <li><a>2</a></li>
+              <li><a>3</a></li>
+              <li><a>4</a></li>
+              <li><a>5</a></li>
+              <li><a>6</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">Book Reservation</button>
+        </div>
+      </form>
+      <div class="reservation-complete">
+        <h3></h3>
+        <p></p>
+      </div>
+      <span class="close-modal"><i class="fa fa-close"></i></span>
+    </div>
+  </div>
+  <div class="modal-bg hidden"></div>
+  <script id="reservationsTemplate" type="text/x-handlebars-template">
+    <tr id="{{id}}">
+      <td>{{name}}</td>
+      <td>{{day}}</td>
+      <td>{{time}}</td>
+      <td>{{party}}</td>
+      <td><span class="remove-reservation">remove</span></td>
+    </tr>
+  </script>
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="js/handlebars-v4.0.5.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
